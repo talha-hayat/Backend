@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(cors())
 
 // DATABASE CONNECTION
-const DB_URI = "mongodb+srv://talhahayat9999:talha@cluster0.8e4os90.mongodb.net/"
+const DB_URI = ""
 mongoose.connect(DB_URI)
 mongoose.connection.on("connected",()=>console.log("DB Connected"))
 mongoose.connection.on("error",()=>console.log("DB Not Connected"))
